@@ -7,12 +7,12 @@ title: "Syllabus"
 
 <div id="subtitle">Fundamentals of Computer Science II</div>
 
-**Summer 2018**
+**Fall 2018**
 
 Instructor | Sections | Email | Office hours
 ---------- | -------- | ----- | ------------
-[David Babcock](http://faculty.ycp.edu/~dbabcock) | | [dbabcock@ycp.edu](mailto:dbabcock@ycp.edu) | KEC101 T R 11am-12pm; or by appointment
-[David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | KEC113
+Don Hake | 101, 102, 104 | [djhake2@ycp.edu](mailto:djhake2@ycp.edu) | 	TBD
+[David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | 103 | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | In KEC 101: TBD
 
 Course Description
 ------------------
@@ -86,7 +86,7 @@ Your overall grade for the course will be determined as follows:
 
 ### Course website
 
-Please check the course web page, <http://ycpcs.github.io/cs201-summer2018>, regularly for important announcements.
+Please check the course web page, <http://ycpcs.github.io/cs201-fall2018>, regularly for important announcements.
 
 ### Reading Assignments
 
@@ -98,7 +98,7 @@ You **must** make a legitimate attempt to complete every homework assignment. We
 
 ### Posting and submission of assignments and labs
 
-Assignments and labs will be posted as zip files on the course web page, <http://ycpcs.github.io/cs201-summer2018>.
+Assignments and labs will be posted as zip files on the course web page, <http://ycpcs.github.io/cs201-fall2018>.
 
 Assignments and labs will be submitted using the server <https://cs.ycp.edu/marmoset>. You will receive an email containing the username and password you should use for this server.
 
