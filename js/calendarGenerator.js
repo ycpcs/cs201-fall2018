@@ -167,6 +167,11 @@ function getLabString(lab, assignOnDate) {
 }
 
 
+function getFileString(file) {
+    if (!file) { return ""; }
+    return linkify(file, "labs/" + file);
+}
+
 
 // checks to see if a valid assignment is available
 // and only displays the assignment on the calendar if the assignment date has arrived
@@ -204,7 +209,7 @@ function printCalendar(opts) {
 
     // Number of items to print
     var numItems = calendar.length;
-    if (opts.omitFinalExams && !opts.inClassFinalExam) {
+    if (opts.omitFinalExams && !courseInfo.inClassFinalExam) {
         numItems -= courseInfo.finalExamDates.length;
     }
 
@@ -231,6 +236,33 @@ function printCalendar(opts) {
 }
 
 
+function printLabs(opts) {
+    document.write("<table>");
+    document.write("<thead><tr><th>Date</th><th>Lab</th><th>File(s)</th>");
+ 
+    // Number of items to print
+    var numItems = calendar.length;
+    if (opts.omitFinalExams && !courseInfo.inClassFinalExam) {
+        numItems -= courseInfo.finalExamDates.length;
+    }
+
+    for (var i = 0; i < numItems; i++) {
+        document.write("<tr>");
+        document.write("<td>" + getDateString(calendar[i].date) + "</td>");
+
+        if (!calendar[i].lab) {
+            // no lab on this date, so use the topic
+            document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
+        } else {
+            document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
+        }
+        document.write("<td>" + getFileString(calendar[i].file) + "</td>");
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+}
+
 
 function autogenCalendar(opts) {
     if (opts === undefined) { opts = {}; }
@@ -239,4 +271,15 @@ function autogenCalendar(opts) {
     populateFinalExams();
     populateCalendar();
     printCalendar(opts);
+}
+
+
+function autogenLabs(opts) {
+    if (opts === undefined) { opts = {}; }
+    opts.omitFinalExams = true; // don't ever add final exams to labs schedule
+    generateDates();
+    populateVacationDays();
+    populateFinalExams();
+    populateCalendar();
+    printLabs(opts);
 }

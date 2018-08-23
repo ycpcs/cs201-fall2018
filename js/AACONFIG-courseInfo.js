@@ -136,6 +136,7 @@ var courseInfo = {
 		{
 			topic: new Topic("Lecture 23: Merge and Quick Sort", "lectures/lecture23.html"),
 			reading: "8.5-8.6",
+			lab: new Lab("No lab", "")
 		},
 		{
 			topic: new Topic("** Exam 3", "")
