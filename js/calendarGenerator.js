@@ -191,15 +191,25 @@ function getAssignmentString(assign, assignOnDate) {
 
 
 
-function printCalendar() {
+function printCalendar(opts) {
+
     var regularSemesterDays = getRegularSemesterDays();
 
     document.write("<table>");
-    document.write("<thead><tr><th>Date</th><th>Topic</th><th>Reading</th><th>Lab</th></tr></thead>");
+    document.write("<thead><tr><th>Date</th><th>Topic</th>");
+    if (!opts.omitReadings) { document.write("<th>Reading</th>"); }
+    if (!opts.omitLabs) { document.write("<th>Lab</th></tr>"); }
+    document.write("</thead>");
         //document.write("<tbody>");
 
+    // Number of items to print
+    var numItems = calendar.length;
+    if (opts.omitFinalExams && !opts.inClassFinalExam) {
+        numItems -= courseInfo.finalExamDates.length;
+    }
+
     // this for-loop prints all the rows for the calendar
-    for (var i=0; i < calendar.length; i++) {
+    for (var i=0; i < numItems; i++) {
 /*
         // this if-statement adds an extra 'empty' row between each week to make the week boundaries stand out a bit more
         // an extra boundary is NOT added after the last item unless there is a final exam that is taken during the final
@@ -212,8 +222,8 @@ function printCalendar() {
         document.write("<td>" + getDateString(calendar[i].date) + "</td>");
         document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
         document.write("<td>" + getReadingString(calendar[i].reading) + "</td>");
-        document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
-        //document.write("<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>");
+        if (!opts.omitLabs) { document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>"); }
+        document.write("<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>");
         document.write("</tr>");
     }
         //document.write("</tbody>");
@@ -222,10 +232,11 @@ function printCalendar() {
 
 
 
-function autogenCalendar() {
+function autogenCalendar(opts) {
+    if (opts === undefined) { opts = {}; }
     generateDates();
     populateVacationDays();
     populateFinalExams();
     populateCalendar();
-    printCalendar();
+    printCalendar(opts);
 }
