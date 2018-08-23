@@ -1,3 +1,5 @@
+// Basic data types and definitions.
+// This file can rely on definitions in AACONFIG-courseInfo.js.
 
 var calendar = [];
 var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -63,11 +65,11 @@ function Lab(title, link) {
 // convention, e.g., "lab04.html", "CS201_Lab04.zip".  The lab description
 // page and the file are assumed to be in the same directory as the
 // document with the lab table.
-function NumberedLab(number, title, courseName) {
+function NumberedLab(number, title) {
     this.title = "Lab " + number + ": " + title;
     var numstr = (number < 10 ? "0" : "") + number;
     this.link = "lab" + numstr + ".html";
-    var shortCourse = courseName.replace(/:.*$/, '').replace(/ /, '');
+    var shortCourse = courseInfo.courseName.replace(/:.*$/, '').replace(/ /, '');
     this.file = shortCourse + "_Lab" + numstr + ".zip";
 }
 
