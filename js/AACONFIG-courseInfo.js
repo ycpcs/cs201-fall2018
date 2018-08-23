@@ -63,7 +63,7 @@ var courseInfo = {
 			topic: new Topic("** Exam 1", "")
 		},
 		{
-			topic: new Topic("Lecture 9: Type casts, instanceof, Object class, Interfaces", "lectures/lectures09.html"),
+			topic: new Topic("Lecture 9: Type casts, instanceof, Object class, Interfaces", "lectures/lecture09.html"),
 			lab: new Lab("Lab 9: Comparable, Sorting", "labs/lab09.html")
 		},
 		{
