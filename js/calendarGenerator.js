@@ -154,13 +154,20 @@ function getReadingString(reading) {
 
 
 
+function isLab(lab) {
+    return (lab instanceof Lab)
+        || (lab instanceof NumberedLab)
+        || (lab instanceof NumberedLabNoFile);
+}
+
+
 // checks to see if a valid lab is available
 // and only displays the lab on the calendar if the lab date has arrived
 function getLabString(lab, assignOnDate) {
     var str = "";
     var today = new Date();
 
-    if ((lab instanceof Lab) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
+    if (isLab(lab) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
         str = linkify(lab.title, lab.link);
     }
     return str;
@@ -168,8 +175,8 @@ function getLabString(lab, assignOnDate) {
 
 
 function getFileString(file) {
-    if (!file) { return ""; }
-    return linkify(file, "labs/" + file);
+    if (!file) { return "n/a"; }
+    return linkify(file, file);
 }
 
 
@@ -253,10 +260,11 @@ function printLabs(opts) {
         if (!calendar[i].lab) {
             // no lab on this date, so use the topic
             document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
+            document.write("<td></td>");
         } else {
             document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
+            document.write("<td>" + getFileString(calendar[i].lab.file) + "</td>");
         }
-        document.write("<td>" + getFileString(calendar[i].file) + "</td>");
         document.write("</tr>");
     }
 

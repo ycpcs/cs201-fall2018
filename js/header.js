@@ -59,6 +59,25 @@ function Lab(title, link) {
     this.link = link;
 }
 
+// Useful for a numbered lab with a filename following the standard naming
+// convention, e.g., "lab04.html", "CS201_Lab04.zip".  The lab description
+// page and the file are assumed to be in the same directory as the
+// document with the lab table.
+function NumberedLab(number, title, courseName) {
+    this.title = "Lab " + number + ": " + title;
+    var numstr = (number < 10 ? "0" : "") + number;
+    this.link = "lab" + numstr + ".html";
+    var shortCourse = courseName.replace(/:.*$/, '').replace(/ /, '');
+    this.file = shortCourse + "_Lab" + numstr + ".zip";
+}
+
+// Variation of NumberedLab for labs without a file
+function NumberedLabNoFile(number, title) {
+    this.title = "Lab " + number + ": " + title;
+    var numstr = (number < 10 ? "0" : "") + number;
+    this.link = "lab" + numstr + ".html";
+}
+
 function Homework(title, link, daysToComplete) {
     this.title = title;
     this.link = link;
