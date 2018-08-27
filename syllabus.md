@@ -11,7 +11,7 @@ title: "Syllabus"
 
 Instructor | Sections | Email | Office hours
 ---------- | -------- | ----- | ------------
-Don Hake | 101, 102, 104 | [djhake2@ycp.edu](mailto:djhake2@ycp.edu) | 	TBD
+[Donald J. Hake II](http://faculty.ycp.edu/~djhake2) | 101, 102, 104 | [djhake2@ycp.edu](mailto:djhake2@ycp.edu) | 	W F in KEC137: 9:15-10:00 <br> W F in KEC123: 11:15-Noon, 1:15-2:00 <br> Th in KEC137: 11:30-12:30
 [David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | 103 | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | In KEC 101: TBD
 
 Course Description
