@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 2: Disk class"
 ---
 
-**Due**: Friday, June 1st by 11:59 PM
+**Due**: Monday, Sept 17th by 11:59 PM
 
 Acknowledgment: The idea for this assignment comes from [Tom Ellman](http://pages.vassar.edu/tomellman/) at Vassar College.
 
