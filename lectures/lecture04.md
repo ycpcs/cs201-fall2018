@@ -90,7 +90,7 @@ Running the **CountVowels** program on that file produces the following output:
 <pre>
 Which file?
 <b>myFile.txt</b>
-The file contains 7 vowel(s)
+The file contains 11 vowel(s)
 </pre>
 
 Reading all lines of text from a file
