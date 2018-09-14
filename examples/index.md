@@ -9,6 +9,7 @@ Date | File | Description
 ---- | ---- | -----------
 Aug 31 | [Employee](Employee.zip) | Example Employee class, JUnit test
 Sep 7 | [FileIO.zip](FileIO.zip) | Example File I/O Programs
+Sep 14 | [CounterGUI.zip](CounterGUI.zip) | Example MVC GUI
 
 <!--
 May 17 | [JUnitExample.zip](JUnitExample.zip) | Example class with JUnit tests
