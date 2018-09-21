@@ -26,6 +26,6 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 
 ## News
 
-* **Aug 31** [Tutoring](tutoring.html) starts Wednesday, Sept 5th.  Monday through Thursday evenings from 6:00 to 8:30.
-
+* **Sep 21** &mdash; The date for **Exam 1** has been changed to **Friday, Sept 28th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
+* **Aug 31** &mdash; [Tutoring](tutoring.html) starts Wednesday, Sept 5th.  Monday through Thursday evenings from 6:00 to 8:30.
 * **Aug 29** &mdash; Welcome back!  [Assignment 1](assign/assign01.html) is due Monday, Sept 10th.  [Assignment 2](assign/assign02.html) and [Assignment 3](assign/assign03.html) have also been posted, due Monday, Sept 17th, and Monday, Oct 1st, respectively.

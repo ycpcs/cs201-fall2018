@@ -41,11 +41,11 @@ courseInfo.classPeriods = [
 		lab: new NumberedLab(8, "Inheriting Fields and Methods")
 	},
 	{
-		topic: new Topic("** Exam 1", "")
-	},
-	{
 		topic: new Topic("Lecture 9: Type casts, instanceof, Object class, Interfaces", "lectures/lecture09.html"),
 		lab: new NumberedLab(9, "Comparable, String")
+	},
+	{
+		topic: new Topic("** Exam 1", "")
 	},
 	{
 		topic: new Topic("Lecture 10: Generic methods and classes", "lectures/lecture10.html"),
