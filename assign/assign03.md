@@ -289,7 +289,13 @@ Also note that points may be deducted for poor coding style.
 Submitting
 ----------
 
-When you are done, submit the lab to the Marmoset server using one of the methods below.
+When you are done, submit your project to the Marmoset server using one of the methods below.
+
+<div class="callout">
+You need to submit the entire project.  Submitting a single source
+file is not sufficient.  Failure to follow the submission instructions
+could result in a lower grade on the assignment.
+</div>
 
 ### From Eclipse
 
