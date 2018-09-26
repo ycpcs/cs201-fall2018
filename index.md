@@ -26,6 +26,7 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 
 ## News
 
+* **Sep 26** &mdash; The date for **Assign03 - DiskGame** has been changed to **Thursday, Oct 4th**.
 * **Sep 24** &mdash; When submitting assignments, please follow the submission instructions by submitting the entire project.  Submitting a single source file is not sufficient.
 * **Sep 21** &mdash; The date for **Exam 1** has been changed to **Friday, Sept 28th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Aug 31** &mdash; [Tutoring](tutoring.html) starts Wednesday, Sept 5th.  Monday through Thursday evenings from 6:00 to 8:30.
