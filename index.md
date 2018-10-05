@@ -25,7 +25,8 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 * [JDK 8 API documentation](https://docs.oracle.com/javase/8/docs/api/)
 
 ## News
-
+* **Oct 5** &mdash; [Assignment 4-MS2](assign/assign04.html) is due Monday, Nov 5th.
+* **Oct 5** &mdash; [Assignment 4-MS1](assign/assign04.html) is due Thursday, Oct 18th.
 * **Sep 26** &mdash; The due date for **Assign03 - DiskGame** has been changed to **Thursday, Oct 4th**.
 * **Sep 24** &mdash; When submitting assignments, please follow the submission instructions by submitting the entire project.  Submitting a single source file is not sufficient.
 * **Sep 21** &mdash; The date for **Exam 1** has been changed to **Friday, Sept 28th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
