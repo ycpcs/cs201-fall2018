@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 6: Mandelbrot Set Color Mapping"
 ---
 
-**Due**: Monday, August 6th by 11:59 PM
+**Due**: Tuesday, December 11th by 11:59 PM
 
 Getting Started
 ===============
