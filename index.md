@@ -25,6 +25,7 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 * [JDK 8 API documentation](https://docs.oracle.com/javase/8/docs/api/)
 
 ## News
+* **Nov 25** &mdash; [Assignment 6](assign/assign06.html) is due Tuesday, Dec 11th.
 * **Oct 31** &mdash; [Assignment 5](assign/assign05.html) is due Tuesday, Nov 20th.
 * **Oct 5** &mdash; [Assignment 4-MS2](assign/assign04.html) is due Monday, Nov 5th.
 * **Oct 5** &mdash; [Assignment 4-MS1](assign/assign04.html) is due Thursday, Oct 18th.
