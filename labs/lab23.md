@@ -19,16 +19,16 @@ Use **create table** commands to create **books** and **authors** tables. From t
     create table books (
         book_id int
             primary key generated always as identity (start with 1, increment by 1),
-        author_id int,
-        title varchar(50),
-        isbn varchar(20)
+        author_id int not null,
+        title varchar(50) not null,
+        isbn varchar(20) not null
     );
 
     create table authors (
         author_id int
             primary key generated always as identity (start with 1, increment by 1),
-        author_lastname varchar(40),
-        author_firstname varchar(40)
+        author_lastname varchar(40) not null,
+        author_firstname varchar(40) not null
     );
 
 Next, use **import** commands to load data into these tables:
